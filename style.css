@@ -18,7 +18,7 @@
 nav button {
   background-color: transparent;
   border: none;
-  font-size: 17px;
+  font-size: 15px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
 }
@@ -44,4 +44,37 @@ h1 {
 
 .showcase-image {
   width: 90%;
+}
+
+.about {
+  padding: 10px;
+}
+
+.about p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  text-align: left;
+  color: hsl(231, 11%, 63%);
+}
+
+.about-header {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  display: inline-block;
+  border-left: 5px solid red;
+  padding-left: 15px;
+  text-align: left;
+}
+
+.about h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  margin-bottom: -10px;
+}
+
+.about h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
