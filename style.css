@@ -55,28 +55,43 @@ nav button {
   font-weight: 500;
   text-align: left;
   color: hsl(231, 11%, 63%);
+  border-bottom: 1px solid hsl(231, 11%, 63%);
+  padding-bottom: 50px;
 }
 
 .about-header {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: -20px;
   padding-right: 10px;
   display: inline-block;
-  border-left: 5px solid red;
-  padding-left: 15px;
+  padding-left: 20px;
   text-align: left;
+  position: relative;
+}
+
+.about-header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  bottom: 0;
+  width: 7px;
+  height: 75%;
+  background-color: red;
 }
 
 .about h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 25px;
-  margin-bottom: -10px;
+  font-size: 20px;
+  color: hsl(231, 11%, 63%);
+  margin-bottom: -20px;
 }
 
 .about h3 {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
+  font-size: 33px;
 }
 
 .banner {
