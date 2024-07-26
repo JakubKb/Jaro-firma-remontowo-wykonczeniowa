@@ -7,14 +7,21 @@
   box-sizing: border-box;
 }
 
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
 .top-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 50px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 10px;
 }
 
 nav button {
@@ -27,7 +34,7 @@ nav button {
 }
 
 .top-bar .logo {
-  height: 90px;
+  height: 80px;
   position: absolute;
   left: -1px;
 }
@@ -35,8 +42,8 @@ nav button {
 .top-bar .menu {
   position: absolute;
   right: 10px;
-  height: 55px;
-  width: 55px;
+  height: 45px;
+  width: 45px;
 }
 
 .content {
@@ -57,6 +64,7 @@ nav button {
   color: hsl(231, 11%, 63%);
   border-bottom: 1px solid hsl(231, 11%, 63%);
   padding-bottom: 50px;
+  font-size: 16px;
 }
 
 .about-header {
@@ -75,7 +83,7 @@ nav button {
   left: 0;
   top: 10px;
   bottom: 0;
-  width: 7px;
+  width: 6px;
   height: 75%;
   background-color: red;
 }
@@ -83,9 +91,10 @@ nav button {
 .about h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 17px;
   color: hsl(231, 11%, 63%);
   margin-bottom: -20px;
+  text-transform: uppercase;
 }
 
 .about h3 {
@@ -96,19 +105,24 @@ nav button {
 
 .banner {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 300px;
+  min-height: 300px;
+  overflow-x: hidden;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .banner-img {
-  background-image: url("./assets/images/IMG_4255.jpeg");
+  background-image: url("./assets/images/IMG_4260.jpeg");
   background-position: center;
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
+  background-size: cover;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
   background-repeat: no-repeat;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   position: absolute;
   top: 0;
@@ -122,10 +136,108 @@ nav button {
   text-transform: uppercase;
   position: relative;
   z-index: 1;
-  color: white;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 20px 0;
 }
 
-.banner {
-  margin-top: 30px;
-  margin-bottom: 30px;
+.banner-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: transparent;
+  color: rgb(252, 252, 252);
+  border: 1px solid white;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  margin-top: 10px;
+}
+
+.banner-button:hover {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  transition: ease-in-out 0.3s;
+  color: black;
+}
+
+.offers h4 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: hsl(231, 11%, 63%);
+  text-transform: uppercase;
+  margin-bottom: -20px;
+  position: relative;
+}
+
+.offers h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: hsl(0, 0%, 0%);
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 33px;
+  position: relative;
+}
+
+.offers h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: red;
+}
+
+.offers ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+.offers li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.offers li img {
+  object-fit: cover;
+  width: 25px;
+  height: 25px;
+}
+
+.icon {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.offers h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: hsl(0, 0%, 0%);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  position: relative;
+  margin: 0;
 }
