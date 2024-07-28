@@ -209,7 +209,6 @@ nav button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 .offers li img {
@@ -240,4 +239,84 @@ nav button {
   font-weight: 600;
   position: relative;
   margin: 0;
+}
+
+.li-desc,
+.li-desc-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.li-desc img {
+  min-height: 400px;
+  min-width: 50%;
+}
+
+.li-desc-right img {
+  min-height: 400px;
+  min-width: 50%;
+}
+
+.li-desc p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  color: hsl(231, 11%, 63%);
+  padding-bottom: 50px;
+  font-size: 15px;
+  margin-left: 10px;
+  overflow-x: hidden;
+  width: 40%;
+}
+
+.li-desc-right p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  color: hsl(231, 11%, 63%);
+  padding-bottom: 20px;
+  font-size: 15px;
+  margin-right: 10px;
+  overflow-x: hidden;
+  width: 40%;
+  text-align: right;
+}
+
+.li-desc p {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.li-desc-right {
+  flex-direction: row-reverse;
+}
+
+.li-desc-right p {
+  margin-right: 10px;
+  text-align: right;
+  margin-top: -2px;
+}
+
+.li-desc-right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.li-desc-right img {
+  min-height: 400px;
+  min-width: 50%;
+}
+
+.li-desc-right-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
 }
