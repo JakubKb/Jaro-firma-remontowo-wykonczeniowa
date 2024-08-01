@@ -229,6 +229,11 @@ nav button {
   padding: 2px;
 }
 
+.offers {
+  border-bottom: 1px solid hsl(231, 11%, 63%);
+  padding-bottom: 50px;
+}
+
 .offers h5 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -312,6 +317,7 @@ nav button {
 .li-desc-right img {
   min-height: 400px;
   min-width: 50%;
+  margin-right: 15px;
 }
 
 .li-desc-right-wrapper {
