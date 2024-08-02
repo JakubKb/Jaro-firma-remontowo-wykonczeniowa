@@ -187,7 +187,8 @@ nav button {
   position: relative;
 }
 
-.offers h2::after {
+.offers h2::after,
+.partners h2::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -230,8 +231,18 @@ nav button {
 }
 
 .offers {
-  border-bottom: 1px solid hsl(231, 11%, 63%);
   padding-bottom: 50px;
+}
+
+.offers::after {
+  content: "";
+  position: absolute;
+  bottom: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  height: 1px;
+  background-color: hsl(231, 11%, 63%);
 }
 
 .offers h5 {
@@ -325,4 +336,56 @@ nav button {
   flex-direction: column;
   justify-content: flex-start;
   align-content: flex-start;
+}
+
+.partners h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: hsl(0, 0%, 0%);
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 33px;
+  position: relative;
+}
+
+.carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.carousel-images img {
+  display: none;
+  max-width: 350px;
+  max-height: 300px;
+}
+
+.carousel-images img.active {
+  display: block;
+}
+
+.carousel-buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carousel-buttons button {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 50%;
+}
+
+.carousel-buttons button:hover {
+  background-color: #ddd;
+}
+
+.active-button {
+  background-color: #acacac !important;
 }
