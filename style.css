@@ -351,41 +351,30 @@ nav button {
   position: relative;
 }
 
-.carousel {
+.carousel-container {
+  width: 70%;
+  overflow: hidden;
   position: relative;
-  max-width: 800px;
-  margin: 50px auto;
+  margin: 0 auto; /* Center the carousel */
 }
 
-.carousel-images img {
-  display: none;
-  max-width: 350px;
-  max-height: 300px;
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 25px;
+  white-space: nowrap; /* Prevent line breaks */
 }
 
-.carousel-images img.active {
-  display: block;
+.carousel-img-wrapper {
+  display: inline-block; /* Ensure images stay in line */
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
 }
 
-.carousel-buttons {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.carousel-buttons button {
-  background-color: #f1f1f1;
-  border: none;
-  padding: 10px;
-  margin: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 50%;
-}
-
-.carousel-buttons button:hover {
-  background-color: #ddd;
-}
-
-.active-button {
-  background-color: #acacac !important;
+.carousel img {
+  max-height: 200px;
+  width: 300px;
+  margin: 10px;
+  transition: transform 0.5s ease;
 }
